@@ -8,7 +8,6 @@ import { manufacturers } from "@/constants";
 
 const SearchManufacturer:React.FC<SearchManufacturerProps> = ({manufacturer, setManufacturer}) => {
     const [query, setQuery] = useState<string>("");
-    console.log(manufacturer)
     const filteredManufacturers = 
         query === "" 
         ? manufacturers 

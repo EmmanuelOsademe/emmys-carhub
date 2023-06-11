@@ -13,11 +13,11 @@ export interface CustomButtonProps {
 export interface CustomFilterProps {
     title: string;
     options: OptionProps[];
-    //setFilter: Dispatch<SetStateAction<string>> | Dispatch<SetStateAction<number>>
+    setFilter: Dispatch<SetStateAction<string>> | Dispatch<SetStateAction<number>>
 }
 export interface OptionProps {
     title: string;
-    value: string //| number;
+    value: string | number;
 }
 
 export interface SearchManufacturerProps {
@@ -57,5 +57,5 @@ export interface HomeProps {
 export interface ShowMoreProps {
     pageNumber: number;
     isNext: boolean;
-    //setLimit: Dispatch<SetStateAction<number>>
+    setLimit: Dispatch<SetStateAction<number>>
 }
