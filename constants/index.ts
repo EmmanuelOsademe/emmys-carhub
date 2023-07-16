@@ -69,7 +69,7 @@ export const fuels = [
       value: "Electricity",
     },
 ];
-  
+
 export const footerLinks = [
     {
       title: "About",

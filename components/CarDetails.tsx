@@ -41,7 +41,7 @@ const CarDetails: React.FC<CarDetailsProps> = ({isOpen, closeModal, car}) => {
                                 leaveTo="opacity-0 scale-90"
                             >
                                 <Dialog.Panel
-                                    className="relative w-ful max-w-lg max-h-[90vh] overflow-y-auto transform rounded-2xl bg-white p-6 text-left shadow-xl transition-all flex flex-col gap-5"
+                                    className="relative w-full max-w-lg max-h-[90vh] overflow-y-auto transform rounded-2xl bg-white p-6 text-left shadow-xl transition-all flex flex-col gap-5"
                                 >
                                     <button
                                         type="button"

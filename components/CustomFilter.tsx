@@ -10,7 +10,6 @@ import { updateSearchParams } from "@/utils";
 const CustomFilter: React.FC<CustomFilterProps> = ({title, options}) => {
     const [selected, setSelected] = useState<OptionProps>(options[0]);
     const router = useRouter();
-    console.log(selected);
 
     const handleUpdateParams = (e: OptionProps) => {
 
