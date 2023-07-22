@@ -71,5 +71,4 @@ const CustomFilter: React.FC<CustomFilterProps> = ({title, options}) => {
         </div>
     )
 }
-
 export default CustomFilter;

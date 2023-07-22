@@ -2,10 +2,8 @@
 
 import { CarCard, CustomFilter, Hero, SearchBar, ShowMore } from "@/components";
 import { fuels, yearsOfProduction } from "@/constants";
-import {  CarProps, FilterProps, HomeProps } from "@/types";
+import {  HomeProps } from "@/types";
 import { fetchCars } from "@/utils";
-import { useEffect, useState } from "react";
-import Image from "next/image";
 
 const Home: React.FC<HomeProps> = async ({searchParams}) => {
     const allCars = await fetchCars({
@@ -15,8 +13,6 @@ const Home: React.FC<HomeProps> = async ({searchParams}) => {
         limit: searchParams.limit || 10,
         fuel: searchParams.fuel || ""
     });
-    
-
 
     const isDataEmpty = !allCars || !Array.isArray(allCars) || allCars.length < 1;
 
@@ -66,7 +62,4 @@ const Home: React.FC<HomeProps> = async ({searchParams}) => {
         </main>
     )
 }
-
-
-
 export default Home;
