@@ -14,13 +14,13 @@ const SearchBar: React.FC = () => {
     const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
-        if(manufacturer === " " || model === " "){
+        if(manufacturer.trim() === " " || model.trim() === " "){
             return alert("Please fill in the search bar")
         }
 
         updateSearchParams(model.toLowerCase(), manufacturer.toLowerCase());
     }
-    console.log(manufacturer, model)
+    console.log(manufacturer, model)  
 
     const updateSearchParams = (model: string, manufacturer: string) => {
         const searchParams = new URLSearchParams(window.location.search);

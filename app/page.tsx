@@ -62,5 +62,4 @@ const Home: React.FC<HomeProps> = async ({searchParams}) => {
         </main>
     )
 }
-
 export default Home;

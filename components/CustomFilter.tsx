@@ -14,8 +14,9 @@ const CustomFilter: React.FC<CustomFilterProps> = ({title, options}) => {
     const handleUpdateParams = (e: OptionProps) => {
 
         const newPathname = updateSearchParams({
-            title: e.title, value: e.value.toLowerCase()
+            title: title, value: e.value.toLowerCase()
         });
+        console.log(newPathname)
         router.push(newPathname);
     }
 
@@ -70,7 +71,4 @@ const CustomFilter: React.FC<CustomFilterProps> = ({title, options}) => {
         </div>
     )
 }
-
-
-
 export default CustomFilter;
